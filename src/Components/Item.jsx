@@ -1,32 +1,28 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-
-import { fetchClient } from "../redux/portfolioSlice.jsx";
+import React, {useEffect, useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import ItemList from "./ItemList.jsx"
+import {fetchClient} from "../redux/portfolioSlice.jsx";
 
 const Item = () => {
-  const [portfolio, setPortfolio] = useState([]);
-  const { data, dataStatus } = useSelector((state) => state.portfolio);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    if (dataStatus === "idle") {
-      dispatch(fetchClient());
-    }
-  }, [dataStatus, dispatch]);
+    const [portfolio, setPortfolio] = useState([]);
+    const {data, dataStatus} = useSelector((state) => state.portfolio);
+    const dispatch = useDispatch();
+    useEffect(() => {
+        if (dataStatus === "idle") {
+            dispatch(fetchClient());
+        }
+    }, [dataStatus, dispatch]);
+    console.log("data", data)
 
-  useEffect(() => {
-    if (dataStatus === "succeeded") {
-      const projects = data.items.map((item) => {
-        const { title, url, image, videos } = item.fields;
-        const id = item.sys.id;
-        const img = image?.fields?.file?.url;
-        const video = videos?.fields?.file?.url;
-        return { title, url, id, img, video };
-      });
-      setPortfolio(projects);
-    }
-  }, [setPortfolio, dataStatus, dispatch]);
-  console.log(portfolio);
-  return <>Hello Dünya</>;
+    return (
+        <section className="grid grid-cols-3 gap-6 place-items-center ">
+        {
+            data.map((item) => (
+                <ItemList key={item.id} item={item}/>
+
+            ))
+        }
+    </section>)
 };
 
 export default Item;

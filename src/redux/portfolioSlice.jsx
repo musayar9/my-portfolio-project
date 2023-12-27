@@ -12,8 +12,16 @@ export const fetchClient = createAsyncThunk(
   async () => {
     try {
       const response = await client.getEntries({ content_type: "projects" });
-      console.log("response", response);
-      return response;
+
+      const data = response.items.map((item)=>{
+        const {title, url, image, videos } = item.fields;
+        const id = item.sys.id;
+        const img = image?.fields?.file.url;
+        const video = videos?.fields?.file.url;
+        return {title, url, id, img, id, video}
+
+      })
+      return data;
     } catch (error) {
       console.log("error", error);
     }
