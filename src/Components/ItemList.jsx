@@ -12,20 +12,20 @@ const ItemList = ({item}) => {
         <div className="group">
 
             <div
-                className="shadow-lg group-hover:shadow-2xl ease-linear  duration-200  group-hover:scale-110  rounded-b-lg  ">
-                <div className="  bg-white  w-80 group  cursor-pointer">
+                className="shadow-lg group-hover:shadow-2xl transition-all ease-linear  duration-300  group-hover:scale-110  rounded-b-lg  ">
+                <div className="   w-80 group  cursor-pointer">
                     <img className="w-full h-44 rounded-t-lg" src={item.img}/>
 
                 </div>
-                <h4 className="p-2 font-semibold text-gray-600 hover:text-gray-800 text-center text-md -mb-4">{item.title}</h4>
+                <h4 className="p-2 font-semibold text-gray-600 hover:text-gray-800 text-center text-lg -mb-4">{item.title}</h4>
                 <div className="flex items-center p-4 space-x-4">
-                    <button>
-                        <FaGithub size={24} title="github"/>
+                    <button className="text-[#475569] hover:text-[#1e293b] ease-in-out duration-200 hover:scale-125">
+                        <FaGithub size={24}  title="github"/>
                     </button>
                     <a href={item.url}
                        target="_blank"
                        rel="noreferrer"
-                       disabled={show === true}
+                       className="text-[#475569] hover:text-[#1e293b] ease-in-out duration-200 hover:scale-125"
                     >
                         <BsDisplay size={24} title={item.url}/>
 
@@ -37,8 +37,8 @@ const ItemList = ({item}) => {
                             setShow(true)
                             console.log(show)
                         }}
-                                className="disabled:text-red-700 not-allowed"
-                              disabled={show == true ? true : false}
+                                className="text-[#475569] hover:text-[#1e293b] ease-in-out duration-200 hover:scale-125"
+
                                 type="button"
                         >
                             <FaCirclePlay  size={24}/>
