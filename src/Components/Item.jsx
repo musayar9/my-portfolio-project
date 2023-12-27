@@ -15,7 +15,7 @@ const Item = () => {
     console.log("data", data)
 
     return (
-        <section className="grid grid-cols-3 gap-6 place-items-center ">
+        <section className="grid m-auto mt-10   w-[90vw] w-max-[1120px] md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center ">
         {
             data.map((item) => (
                 <ItemList key={item.id} item={item}/>

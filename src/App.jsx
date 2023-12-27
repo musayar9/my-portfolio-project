@@ -1,11 +1,12 @@
 import Item from "./Components/Item.jsx";
-
+import Person from "./Components/Person.jsx";
 
 function App() {
 
 
   return (
-    <div className="m-auto  w-[90vw] w-max-[1120px] p-5">
+    <div >
+        <Person/>
       <Item/>
     </div>
   )

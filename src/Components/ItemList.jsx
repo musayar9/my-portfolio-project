@@ -2,9 +2,8 @@ import React, {useState, useRef} from 'react'
 import {FaGithub} from "react-icons/fa";
 import {BsDisplay} from "react-icons/bs";
 import {MdClose} from "react-icons/md";
-
+import { FaCirclePlay } from "react-icons/fa6";
 const ItemList = ({item}) => {
-
 
     const [show, setShow] = useState(false)
     const ref = useRef()
@@ -25,20 +24,25 @@ const ItemList = ({item}) => {
                     </button>
                     <a href={item.url}
                        target="_blank"
-                       rel="noreferrer">
+                       rel="noreferrer"
+                       disabled={show === true}
+                    >
                         <BsDisplay size={24} title={item.url}/>
+
                     </a>
                     <>
                         {/* Modal toggle */}
+
                         <button onClick={() => {
                             setShow(true)
                             console.log(show)
                         }}
-
-                                className="flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="disabled:text-red-700 not-allowed"
+                              disabled={show == true ? true : false}
                                 type="button"
                         >
-                            Toggle modal
+                            <FaCirclePlay  size={24}/>
+
                         </button>
                         {/* Main modal */}
 
@@ -50,9 +54,9 @@ const ItemList = ({item}) => {
 
 
             {show && (
-                <div className=" fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full  "
+                <div className=" fixed  z-50 inset-0 bg-black bg-opacity-75 flex justify-center items-center w-full  "
                 >
-                    <div className=" absolute top-24 p-4 w-full max-w-2xl max-h-full  ">
+                    <div className=" absolute top-20 p-4 w-full max-w-2xl max-h-full  ">
                         {/* Modal content */}
                         <div className="relative bg-black pt-4 rounded-lg shadow ">
                             <div className="flex items-center justify-between">
@@ -61,6 +65,7 @@ const ItemList = ({item}) => {
                                         type="button"
                                         className="absolute    end-2.5 text-gray-50 hover:text-red-800 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
                                         onClick={() => setShow(false)}
+
                                 >
                                     <MdClose size={18}/>
 
