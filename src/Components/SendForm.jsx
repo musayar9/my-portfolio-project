@@ -3,10 +3,10 @@ import {useDispatch, useSelector} from "react-redux"
 import emailjs from '@emailjs/browser';
 import {sendFormMail} from "../redux/portfolioSlice.jsx"
 import { toast } from 'react-toastify';
-
-
+import ReCAPTCHA from "react-google-recaptcha";
+const email_key = import.meta.env.REACT__API_KEY
 const SendForm = () => {
-    const email_key = import.meta.env.REACT_EMAIL_API_KEY
+
     const form = useRef()
     const [mail, sendMail] = useState({
         user_name: "",
@@ -14,18 +14,19 @@ const SendForm = () => {
         subject: "",
         message: ""
     })
-
+    const [isNotRobot, setIsNotRobot] = useState(false)
     const {sendFormModal} = useSelector((state) => state.portfolio);
     console.log(sendFormModal)
     const dispatch = useDispatch()
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_odqed8z', 'template_9ljbbad', form.current, `${email_key}`)
+        emailjs.sendForm('service_odqed8z', 'template_9ljbbad', form.current, `${import.meta.env.VITE_EMAIL_API_KEY}`)
             .then((result) => {
                 console.log(result);
             }, (error) => {
                 console.log(error.text);
+                throw new Error(error.text)
             });
         e.target.reset()
         sendMail({
@@ -48,11 +49,14 @@ const SendForm = () => {
         })
 
     }
-
+    function onChange(value) {
+        console.log("Captcha value:", value);
+        setIsNotRobot(true)
+    }
 
     return (
         <>
-            <form ref={form} onSubmit={handleSubmit} className="max-w-md mx-auto p-5 mt-4">
+            <form ref={form} onSubmit={handleSubmit} className="max-w-md mx-auto p-2 mt-4">
 
                 <div className="relative z-0 w-full mb-5 group">
                     <input
@@ -105,9 +109,12 @@ const SendForm = () => {
                     </label>
                 </div>
                 <div className="flex items-center justify-end">
-                    <button type="submit" className=" px-4 py-2 bg-gray-500 text-gray-50 rounded-md hover:bg-gray-600 duration-200 ease-out active:translate-y-2 shadow-lg" value="Send">Send Mail</button>
+                    <button disabled={!isNotRobot} type="submit" className="text-sm disabled:bg-red-400 px-3 py-1 bg-gray-500 text-gray-50 rounded-md hover:bg-gray-600 duration-200 ease-out active:translate-y-2 shadow-lg" value="Send">Send Mail</button>
                 </div>
-
+                <ReCAPTCHA
+                    sitekey="6LeuRz8pAAAAAMBe0cseN6lEKYqgS1krOhDR1Bk8"
+                    onChange={onChange}
+                />
             </form>
         </>
 

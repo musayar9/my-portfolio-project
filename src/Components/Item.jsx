@@ -17,7 +17,7 @@ const Item = () => {
     return (
         <>
                 <h2 className="p-5 mt-8 text-center font-bold text-[#334155] text-4xl">My Projects</h2>
-            <section className="grid m-auto mt-8 mb-8   w-[90vw] w-max-[1120px] md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center ">
+            <section className="grid m-auto mt-8 mb-8   p-6 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center ">
 
                 {
                     data.map((item) => (
