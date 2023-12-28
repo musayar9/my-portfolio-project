@@ -4,7 +4,7 @@ import { createClient } from "contentful";
 const client = createClient({
   space: "7trciuutlq82",
   environment: "master",
-  accessToken: "bn3Y21QHxPWfsYES6gPFq9rE917IqG122EOqZCJY6ow",
+  accessToken:import.meta.env.VITE_API_KEY,
 });
 
 export const fetchClient = createAsyncThunk(
@@ -18,7 +18,7 @@ export const fetchClient = createAsyncThunk(
         const id = item.sys.id;
         const img = image?.fields?.file.url;
         const video = videos?.fields?.file.url;
-        return {title, url, id, img, id, video}
+        return {title, url, id, img, video}
 
       })
       return data;
@@ -34,8 +34,13 @@ export const portfolioSlice = createSlice({
     data: [],
     dataStatus: "idle",
     error: "",
+    sendFormModal: false
   },
-  reducers: {},
+  reducers: {
+    sendFormMail:(state, action)=>{
+      state.sendFormModal = action.payload;
+    }
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchClient.pending, (state) => {
       state.dataStatus = "loading";
@@ -51,5 +56,5 @@ export const portfolioSlice = createSlice({
   },
 });
 
-export const {} = portfolioSlice.actions;
+export const {sendFormMail} = portfolioSlice.actions;
 export default portfolioSlice.reducer;
