@@ -20,7 +20,7 @@ const Person = () => {
 <div className="relative">
     <div className="flex items-center justify-center   p-[2rem] bg-[#e2e8f0] ">
         <div className=" md:grid  grid-cols-4  gap-4   w-[90vw] w-max-[1120px]">
-            <div className="col-span-3 flex items-center justify-center flex-col wrap p-4 text-center">
+            <div className="col-span-3 flex items-center justify-center flex-col  p-4 text-center">
                 {/*<h1 className="text-[#1e293b] font-bold text-4xl">Junior Front-End Developer</h1>*/}
                 <h2 className="text-[#334155] font-bold text-3xl">Musa Sayar</h2>
 

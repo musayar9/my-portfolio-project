@@ -4,7 +4,7 @@ import { createClient } from "contentful";
 const client = createClient({
   space: "7trciuutlq82",
   environment: "master",
-  accessToken:import.meta.env.VITE_API_KEY,
+  accessToken: import.meta.env.VITE_API_KEY,
 });
 
 export const fetchClient = createAsyncThunk(
@@ -12,18 +12,17 @@ export const fetchClient = createAsyncThunk(
   async () => {
     try {
       const response = await client.getEntries({ content_type: "projects" });
-
-      const data = response.items.map((item)=>{
-        const {title, url, image, videos } = item.fields;
+      console.log(response);
+      const data = response.items.map((item) => {
+        const { title, url, image, videos } = item.fields;
         const id = item.sys.id;
         const img = image?.fields?.file.url;
         const video = videos?.fields?.file.url;
-        return {title, url, id, img, video}
-
-      })
+        return { title, url, id, img, video };
+      });
       return data;
     } catch (error) {
-      console.log("error", error);
+      throw new Error(error);
     }
   }
 );
@@ -34,12 +33,12 @@ export const portfolioSlice = createSlice({
     data: [],
     dataStatus: "idle",
     error: "",
-    sendFormModal: false
+    sendFormModal: false,
   },
   reducers: {
-    sendFormMail:(state, action)=>{
+    sendFormMail: (state, action) => {
       state.sendFormModal = action.payload;
-    }
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchClient.pending, (state) => {
@@ -51,10 +50,10 @@ export const portfolioSlice = createSlice({
     });
     builder.addCase(fetchClient.rejected, (state, action) => {
       state.dataStatus = "failed";
-      state.error = action.payload;
+      state.error = action.error;
     });
   },
 });
 
-export const {sendFormMail} = portfolioSlice.actions;
+export const { sendFormMail } = portfolioSlice.actions;
 export default portfolioSlice.reducer;

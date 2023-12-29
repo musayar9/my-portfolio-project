@@ -13,7 +13,7 @@ const ItemList = ({item}) => {
 
             <div
                 className="shadow-lg group-hover:shadow-2xl transition-all ease-linear  duration-300  group-hover:scale-110  rounded-b-lg  ">
-                <div className=" w-72  sm:w-96 md:w-80 xl:w-96   group  cursor-pointer">
+                <div className=" w-72  sm:w-96 md:w-80  group  cursor-pointer">
                     <img className="w-full h-44 rounded-t-lg" src={item.img}/>
 
                 </div>
@@ -31,11 +31,12 @@ const ItemList = ({item}) => {
 
                     </a>
                     <>
-                        {/* Modal toggle */}
+                       
 
                         <button onClick={() => {
                             setShow(true)
-                            console.log(show)
+                            
+                            
                         }}
                                 className="text-[#475569] hover:text-[#1e293b] ease-in-out duration-200 hover:scale-125"
 
@@ -44,7 +45,7 @@ const ItemList = ({item}) => {
                             <FaCirclePlay  size={24}/>
 
                         </button>
-                        {/* Main modal */}
+                   
 
                     </>
 

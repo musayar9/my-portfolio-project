@@ -19,7 +19,8 @@ const FormModal = ()=>{
                             <p className="text-gray-500 pl-4 font-semibold">Send Mail</p>
                             <button onClick={()=>dispatch(sendFormMail(false))}
                                     type="button"
-                                    className="absolute    end-2.5 text-gray-500 hover:text-red-800 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
+                                    className="absolute    end-2.5 text-gray-500 hover:text-red-800 rounded-lg text-sm w-8 h-8 
+                                    ms-auto inline-flex justify-center items-center "
 
                             >
                                 <MdClose size={18}/>
