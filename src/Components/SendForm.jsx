@@ -4,7 +4,8 @@ import emailjs from '@emailjs/browser';
 import {sendFormMail} from "../redux/portfolioSlice.jsx"
 import { toast } from 'react-toastify';
 import ReCAPTCHA from "react-google-recaptcha";
-const email_key = import.meta.env.REACT__API_KEY
+const ReCAPTCHA_KEY = import.meta.env.VITE_CAPTCHA_API_KEY;
+const EMAIL_KEY = import.meta.env.VITE_EMAIL_API_KEY;
 const SendForm = () => {
 
     const form = useRef()
@@ -21,7 +22,7 @@ const SendForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_odqed8z', 'template_9ljbbad', form.current, `${import.meta.env.VITE_EMAIL_API_KEY}`)
+        emailjs.sendForm('service_odqed8z', 'template_9ljbbad', form.current, `${EMAIL_KEY}`)
             .then((result) => {
                 console.log(result);
             }, (error) => {
@@ -112,7 +113,7 @@ const SendForm = () => {
                     <button disabled={!isNotRobot} type="submit" className="text-sm disabled:bg-red-400 px-3 py-1 bg-gray-500 text-gray-50 rounded-md hover:bg-gray-600 duration-200 ease-out active:translate-y-2 shadow-lg" value="Send">Send Mail</button>
                 </div>
                 <ReCAPTCHA
-                    sitekey="6LeuRz8pAAAAAMBe0cseN6lEKYqgS1krOhDR1Bk8"
+                    sitekey={ReCAPTCHA_KEY}
                     onChange={onChange}
                 />
             </form>
