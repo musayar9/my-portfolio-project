@@ -1,37 +1,13 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { createClient } from "contentful";
-
-const client = createClient({
-  space: "7trciuutlq82",
-  environment: "master",
-  accessToken: import.meta.env.VITE_API_KEY,
-});
-
-export const fetchClient = createAsyncThunk(
-  "portfolio/fetchClient",
-  async () => {
-    try {
-      const response = await client.getEntries({ content_type: "projects" });
-      console.log(response);
-      const data = response.items.map((item) => {
-        const { title, url, image, videos } = item.fields;
-        const id = item.sys.id;
-        const img = image?.fields?.file.url;
-        const video = videos?.fields?.file.url;
-        return { title, url, id, img, video };
-      });
-      return data;
-    } catch (error) {
-      throw new Error(error);
-    }
-  }
-);
+import { createSlice } from "@reduxjs/toolkit";
+import { fetchClient, fetchArticle } from "./client";
 
 export const portfolioSlice = createSlice({
   name: "portfolio",
   initialState: {
     data: [],
+    article: [],
     dataStatus: "idle",
+    articleStatus: "idle",
     error: "",
     sendFormModal: false,
   },
@@ -41,6 +17,7 @@ export const portfolioSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
+    //fetchClient
     builder.addCase(fetchClient.pending, (state) => {
       state.dataStatus = "loading";
     });
@@ -50,6 +27,18 @@ export const portfolioSlice = createSlice({
     });
     builder.addCase(fetchClient.rejected, (state, action) => {
       state.dataStatus = "failed";
+      state.error = action.error;
+    });
+    //fetchArticle
+    builder.addCase(fetchArticle.pending, (state, action) => {
+      state.articleStatus = "loading";
+    });
+    builder.addCase(fetchArticle.fulfilled, (state, action) => {
+      state.articleStatus = "succeeded";
+      state.article = action.payload;
+    });
+    builder.addCase(fetchArticle.rejected, (state, action) => {
+      state.articleStatus = "failed";
       state.error = action.error;
     });
   },
