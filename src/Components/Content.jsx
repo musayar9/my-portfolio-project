@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import ArticleWriting from "./ArticleWriting";
 import PageNotFound from "./PageNotFound";
 import Header from "./Header";
+import ScrollBanner from "./ScrollBanner";
 
 const Content = () => {
   const { dataStatus, articleStatus } = useSelector((state) => state.portfolio);
@@ -21,6 +22,7 @@ const Content = () => {
   return (
     <div className="relative">
       <Person />
+      <ScrollBanner/>
       <Header />
       <Routes>
         <Route exact path="/" element={<Item />} />

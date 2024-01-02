@@ -36,7 +36,7 @@ try {
     const {title, url, image, description } = item.fields;
     const id=item.sys.id;
     const img =  image.fields.file.url
-    return {title, url, img, description}
+    return {title, url, img, id, description}
     })
     return data;
     

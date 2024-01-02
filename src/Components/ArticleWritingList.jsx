@@ -5,12 +5,7 @@ import { Link } from "react-router-dom";
 
 const ArticleWritingList = ({ item }) => {
   return (
-    <a
-      href={item.url}
-      target="_blank"
-      rel="noreferrer"
-   
-    >
+    <a href={item.url} target="_blank" rel="noreferrer">
       <div className="group">
         <div className="shadow-lg group-hover:shadow-2xl transition-all ease-linear  duration-300  group-hover:scale-110  rounded-b-lg  ">
           <div className=" w-72  sm:w-96 md:w-80  group   cursor-pointer relative">
@@ -27,7 +22,7 @@ const ArticleWritingList = ({ item }) => {
             {item.title}
           </h4>
           <div className="flex  p-3 pl-4 ">
-            <a
+            {/* <a
               href={item.url}
               target="_blank"
               rel="noreferrer"
@@ -35,7 +30,15 @@ const ArticleWritingList = ({ item }) => {
             >
               <FaMedium size={24} title={item.url} />
               <AiOutlineMediumWorkmark size={40} title={item.url} />
-            </a>
+            </a> */}
+
+            <p
+      
+              className="text-[#475569] hover:text-[#1e293b] ease-in-out duration-200 hover:scale-125 flex items-center justify-center space-x-2"
+            >
+              <FaMedium size={24} title={item.url} />
+              <AiOutlineMediumWorkmark size={40} title={item.url} />
+            </p>
           </div>
         </div>
       </div>

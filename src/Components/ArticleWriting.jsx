@@ -23,7 +23,7 @@ const ArticleWriting = () => {
       <section  className="grid m-auto mt-8 mb-8  w-[90vw] w-max-[1120px]   p-6 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
       {
         article.map((item)=>(
-        <ArticleWritingList key={item.id} item={item}/>
+        <ArticleWritingList key={item?.id} item={item}/>
         ))
       }
       </section>
