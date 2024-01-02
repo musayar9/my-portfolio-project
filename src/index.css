@@ -6,3 +6,36 @@ body{
         background: #f1f5f9;
 
 }
+
+.tag-list{
+        margin: 0;
+        padding-inline: 0;
+        list-style: none;
+        background-color: #2e2d35;
+}
+
+.tag-list li{
+        padding-right: 20px;
+        border-right: 2px solid #7c7ade;
+}
+
+.scroller{
+        max-width: 60px;
+        
+}
+
+.scroller_inner{
+        padding-block: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+}
+
+.scroller[data-animated="true"]{
+overflow: hidden;
+-webkit-mask:linear-gradient(
+90deg, transparent, white 20%,  white 80%, transparent);
+mask:linear-gradient(
+90deg, transparent, white 20%,  white 80%, transparent)
+}
+
