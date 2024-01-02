@@ -1,12 +1,10 @@
 import React, { useRef } from "react";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3 } from "react-icons/fa";
+// import "./scroller.css";
 const ScrollBanner = () => {
-  const ref = useRef();
-  console.log(ref.current);
   const scrollers = document.querySelectorAll(".scroller");
   console.log("scrollers", scrollers);
-
 
   const addAnimation = () => {
     scrollers.forEach((scroller) => {
@@ -21,13 +19,12 @@ const ScrollBanner = () => {
       });
     });
   };
-  
-  
+
   if (!window.matchMedia("(prefers-reduced-motion:reduce").matches) {
     addAnimation();
   }
   return (
-    <div className="scroller" ref={ref} dataspeed="fast">
+    <div className="scroller" dataspeed="slow">
       <ul className="tag-list scroller_inner">
         <li>
           <FaHtml5 /> HTML5{" "}

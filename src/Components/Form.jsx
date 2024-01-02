@@ -1,8 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { sendFormMail } from "../redux/portfolioSlice.jsx";
 import { MdOutgoingMail } from "react-icons/md";
+import { memo } from "react";
+
 const Form = () => {
-  const { sendFormModal } = useSelector((state) => state.portfolio);
+
 
   const dispatch = useDispatch();
   return (
@@ -18,4 +20,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default memo(Form);
