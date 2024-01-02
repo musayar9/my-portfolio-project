@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-
+import { FaHtml5 } from "react-icons/fa6";
+import { FaCss3 } from "react-icons/fa";
 const ScrollBanner = () => {
   const ref = useRef();
   console.log(ref.current);
@@ -28,8 +29,12 @@ const ScrollBanner = () => {
   return (
     <div className="scroller" ref={ref} dataspeed="fast">
       <ul className="tag-list scroller_inner">
-        <li>HTML5 </li>
-        <li>CSS</li>
+        <li>
+          <FaHtml5 /> HTML5{" "}
+        </li>
+        <li>
+          <FaCss3 /> CSS
+        </li>
         <li>JavaScript</li>
         <li>ReactJs</li>
         <li>Redux Toolkit</li>
@@ -40,7 +45,6 @@ const ScrollBanner = () => {
         <li>Bootstrap</li>
         <li>TailwindCss</li>
         <li>PowerBı</li>
-        
       </ul>
     </div>
   );
