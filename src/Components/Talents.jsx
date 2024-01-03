@@ -1,12 +1,12 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { FaHtml5 } from "react-icons/fa6";
+import { FaHtml5, FaSass } from "react-icons/fa6";
 import { FaCss3, FaReact, FaNodeJs, FaBootstrap } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiRedux, SiExpress, SiTailwindcss } from "react-icons/si";
+import { SiRedux, SiExpress, SiTailwindcss, SiJquery } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { PiFileSql } from "react-icons/pi";
-import { BsFileBarGraphFill } from "react-icons/bs";
+import { BsFileBarGraphFill, BsGithub } from "react-icons/bs";
 
 const Talents = () => {
   return (
@@ -26,6 +26,13 @@ const Talents = () => {
       </div>
       <div className="px-6  flex items-center justify-center space-x-2   text-[#334155]  my-3  border-r-2 border-[#eee] ">
         <FaCss3 className="text-[#254BDD]" /> <span>CSS</span>
+      </div>
+      <div className="px-6  flex items-center justify-center space-x-2   text-[#334155]  my-3  border-r-2 border-[#eee] ">
+        <FaSass className="text-[#C76494]" /> <span>Sass-Scss</span>
+      </div>
+      <div className="px-6  my-3  text-[#334155]  border-r-2 border-[#eee] flex items-center justify-center space-x-2">
+        <SiJquery className="text-[#78CFF5]" />
+        <span>Jquery</span>
       </div>
       <div className="px-6  my-3  text-[#334155]  border-r-2 border-[#eee] flex items-center justify-center space-x-2">
         <RiJavascriptFill className="text-[#EFD81D]" />
@@ -66,6 +73,10 @@ const Talents = () => {
       <div className="px-6 my-3 text-[#334155] border-r-2 border-[#eee] flex items-center justify-center space-x-2">
         <BsFileBarGraphFill className="text-yellow-600" />
         <span>PowerBı</span>
+      </div>
+      <div className="px-6 my-3 text-[#334155] border-r-2 border-[#eee] flex items-center justify-center space-x-2">
+        <BsGithub className="text-[#000000]" />
+        <span>Github</span>
       </div>
     </Marquee>
   );
