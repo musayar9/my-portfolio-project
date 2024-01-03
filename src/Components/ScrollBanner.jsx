@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3 } from "react-icons/fa";
+import Marquee from "react-fast-marquee";
 // import "./scroller.css";
 const ScrollBanner = () => {
   const scrollers = document.querySelectorAll(".scroller");
