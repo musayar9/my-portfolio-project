@@ -13,7 +13,7 @@ import {sendFormMail} from "../redux/portfolioSlice.jsx"
 import FormModal from "./FormModal.jsx"
 const Person = () => {
     const {sendFormModal} = useSelector((state) => state.portfolio);
-    console.log(sendFormModal)
+
     const dispatch = useDispatch()
     return (
 

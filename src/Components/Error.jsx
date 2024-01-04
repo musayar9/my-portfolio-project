@@ -1,5 +1,5 @@
 import React from 'react'
-import Error404 from "../assets/page_notfound.svg"
+import Error404 from "../assets/fixing_bugs.svg"
 const Error = ({message}) => {
   return (
     <div className="flex flex-col items-center justify-center p-5 h-[100vh]  ">

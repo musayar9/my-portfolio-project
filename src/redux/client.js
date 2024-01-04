@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 import { createClient } from "contentful";
 export const client = createClient({
-  space: "7trciuutlq82",
+  space: import.meta.env.VITE_CONTENT_SPACE_KEY,
   environment: "master",
   accessToken: import.meta.env.VITE_API_KEY,
 });
@@ -12,7 +12,7 @@ export const fetchClient = createAsyncThunk(
   async () => {
     try {
       const response = await client.getEntries({ content_type: "projects" });
-      console.log(response);
+
       const data = response.items.map((item) => {
         const { title, url, image, videos, github } = item.fields;
         const id = item.sys.id;
@@ -31,7 +31,6 @@ export const fetchClient = createAsyncThunk(
 export const fetchArticle = createAsyncThunk("article/fetchArticle", async()=>{
 try {
     const response = await client.getEntries({content_type:"article"});
-    console.log(response);
     const data = response.items.map((item)=>{
     const {title, url, image, description } = item.fields;
     const id=item.sys.id;

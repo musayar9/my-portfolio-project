@@ -5,8 +5,8 @@ import {sendFormMail} from "../redux/portfolioSlice.jsx"
 import SendForm from "./SendForm.jsx"
 // import Form from "./Form.jsx"
 const FormModal = ()=>{
-    const {sendFormModal} = useSelector((state) => state.portfolio);
-    console.log(sendFormModal)
+    
+   
     const dispatch = useDispatch()
     return (
         <>

@@ -2,87 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --animation-duration: 40s;
-  --animation-direction: reverse;
-}
+
 body {
   background: #f1f5f9;
 }
 
-.tag-list {
-  margin: 0;
-  padding-inline: 0;
-  list-style: none;
-  background-color: #9ca3af;
-}
-
-.tag-list li {
-  padding-left: 10px;
-  padding-right: 20px;
-  border-right: 2px solid #eee;
-  color: #334155;
-  font-weight: 600;
-display: flex;
-align-items: center;
-justify-content: center;
-padding-left: 1px;
-}
-
-.scroller {
-  width: 100%;
-}
-
-.scroller_inner {
-  padding-block: 1rem;
-  display: flex;
-
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.scroller[data-animated="true"] {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    #475569 20%,
-    #475569 80%,
-    transparent
-  );
-  mask: linear-gradient(
-    90deg,
-    transparent,
-    #475569 20%,
-    #475569 80%,
-    transparent
-  );
-}
-
-.scroller[data-animated="true"] .scroller_inner {
-  width: max-content;
-  flex-wrap: nowrap;
-  animation: scroll var(--animation-duration, 40s)
-    var(--animation-direction, forwards) linear infinite;
-}
-.scroller[data-direction="right"] {
-  animation-direction: reverse;
-}
-
-/* .scroller[data-direction="left"] {
-  animation-direction: forwards;
-} */
-
-/* .scroller[data-speed="fast"] {
-  animation-direction: 2s;
-} */
-
-.scroller[data-speed="slow"] {
-  animation-direction: 60s;
-}
-
-@keyframes scroll {
-  to {
-    transform: translate(calc(-50% - 0.5rem));
-  }
-}

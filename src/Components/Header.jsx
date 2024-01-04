@@ -8,7 +8,7 @@ const Header = () => {
         to="/"
         className={({ isActive }) => {
           return isActive
-            ? "text-teal-700 underline text-lg  font-bold  "
+            ? "text-teal-600 underline text-lg  font-bold  "
             : "text-[#334155] text-md   font-semibold";
         }}
       >
@@ -18,7 +18,7 @@ const Header = () => {
         to="/article"
         className={({ isActive }) => {
           return isActive
-            ? "text-teal-700 underline text-lg font-bold  "
+            ? "text-teal-600 underline text-lg font-bold  "
             : "text-[#334155] text-md  font-semibold ";
         }}
       >

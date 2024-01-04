@@ -17,7 +17,7 @@ const SendForm = () => {
     })
     const [isNotRobot, setIsNotRobot] = useState(false)
     const {sendFormModal} = useSelector((state) => state.portfolio);
-    console.log(sendFormModal)
+
     const dispatch = useDispatch()
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -26,7 +26,7 @@ const SendForm = () => {
             .then((result) => {
                 console.log(result);
             }, (error) => {
-                console.log(error.text);
+             
                 throw new Error(error.text)
             });
         e.target.reset()
@@ -51,7 +51,6 @@ const SendForm = () => {
 
     }
     function onChange(value) {
-        console.log("Captcha value:", value);
         setIsNotRobot(true)
     }
 

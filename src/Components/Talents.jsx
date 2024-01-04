@@ -13,7 +13,7 @@ const Talents = () => {
     <Marquee
       className="bg-[#9ca3af] "
       direction="right"
-      speed={200}
+      speed={150}
       loop={0}
       play={true}
       gradient={true}

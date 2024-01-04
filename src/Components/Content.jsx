@@ -10,7 +10,6 @@ import { Routes, Route } from "react-router-dom";
 import ArticleWriting from "./ArticleWriting";
 import PageNotFound from "./PageNotFound";
 import Header from "./Header";
-import ScrollBanner from "./ScrollBanner";
 import Talents from "./Talents";
 
 const Content = () => {
@@ -21,9 +20,9 @@ const Content = () => {
   if (dataStatus === "failed" || articleStatus === "failed")
     return <Error message={"requested entity not found"} />;
   return (
-    <div className="relative">
+    <div className="relative ">
       <Person />
-      {/* <ScrollBanner/> */}
+      
       <Talents/>
       <Header />
       <Routes>
