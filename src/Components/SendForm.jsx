@@ -16,7 +16,7 @@ const SendForm = () => {
         message: ""
     })
     const [isNotRobot, setIsNotRobot] = useState(false)
-    const {sendFormModal} = useSelector((state) => state.portfolio);
+    
 
     const dispatch = useDispatch()
     const handleSubmit = (e) => {
