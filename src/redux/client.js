@@ -14,11 +14,11 @@ export const fetchClient = createAsyncThunk(
       const response = await client.getEntries({ content_type: "projects" });
       console.log(response);
       const data = response.items.map((item) => {
-        const { title, url, image, videos } = item.fields;
+        const { title, url, image, videos, github } = item.fields;
         const id = item.sys.id;
         const img = image?.fields?.file.url;
         const video = videos?.fields?.file.url;
-        return { title, url, id, img, video };
+        return { title, url, id, img, video, github };
       });
       return data;
     } catch (error) {
