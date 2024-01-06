@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import personImg from "../assets/person.svg";
+import personImg from "../assets/musaSayar.jpg";
 import {IoMdMail} from "react-icons/io";
 import {FaPhone} from "react-icons/fa6";
 import {BsGithub} from "react-icons/bs";
@@ -62,7 +62,7 @@ const Person = () => {
 
             <div className="flex flex-col items-center justify-center ">
                 <div
-                    className="p-5 hidden md:flex  w-56 h-56  bg-teal-600 border-4 border-gray-50 rounded-full drop-shadow-xl">
+                    className=" hidden md:flex  w-56 h-56  bg-teal-600 border-4 border-gray-50 rounded-full drop-shadow-xl">
                     <img className="rounded-full  w-[100%] h-[100%] " src={personImg}/>
                 </div>
 
