@@ -50,3 +50,35 @@ Github projlerimin ve medium yazılarımın olduğu iki farklı sayfa oluşturdu
 
 | ![img-3](src/images/3.jpg) | ![img-4](src/images/4.jpg) |
 | -------------------------- | -------------------------- |
+
+## Projeler
+ ![img-3](src/images/3.jpg) 
+
+Bu alanda html5, css, javascript, react ve nodeJs teknolojilerini kullanarak yaptığım projeler bulunmaktadır.
+
+| ![img-6](src/images/6.jpg) | ![img-7](src/images/7.jpg) |
+| -------------------------- | -------------------------- |
+
+ Yukarıda sol tarafataki resimde  kırmızı okla gösterilen github ikonuna tıkladığınızda igili projenin githup reposuna yönlendirileceksiniz.
+
+| ![img-8](src/images/8.jpg) | ![img-9](src/images/9.jpg) |
+| -------------------------- | -------------------------- |
+
+Yukarıda sol tarafataki resimde  resimde mavi okla gösterilen ekran ikonuna tıkladığınız da projenin demosunun bulunduğu sayfaya yönlendirileceksiniz.
+
+
+| ![img-10](src/images/10.jpg) | ![img-11](src/images/11.jpg) |
+| -------------------------- | -------------------------- |
+
+Yukarıda sol tarafataki resimde yeşil okla gösterilen play ikonuna tıkladığınızda projenin canlı demosunun videosunu izleyebileiceksiniz.
+
+## Articles (Makaleler)
+
+![img-4](src/images/4.jpg) 
+
+ Bu sayfada ise medium platformu üzerinde yayınlamış olduğumuz makaleler bulunmaktadır.
+ 
+| ![img-12](src/images/12.jpg) | ![img-13](src/images/13.jpg) |
+| -------------------------- | -------------------------- |
+
+Sayfada bulunan makalelerden herhangi birinin üzerine fare ile geldiğinizde ilgili makalenin kısa tanıtımını görüntüleyeceksiniz. Makalenin üstünde tıkladığınız da ise ilgili makalenin bulunduğu medium sayfasına yönlendirileceksiniz.
