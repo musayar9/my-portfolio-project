@@ -20,6 +20,33 @@
 
 Bu projemde kendimi tanıtan bir portfolyo sayfası yaptım. Bu sayfada benim github ve medium hesabımda yayınlamış olduğum projelerimin ve makaleleimin ön tantımları yer almakta.
 
-Proje de javascriptin react kütüphanesini kullandık. State yönetimini redux toolkit ile yaptık. Proje tasarımında ise tailwindcss kullandımç Porje responsive yapıda tasarlandı. Projemdeki verileri contentfulApi üzerinde tutum bu verileri bu api üzerinden çektik. Emailjs kütüphanesini kullanarak bir mail gönderme formu oluşturduk. Bu formun güvenliği içinde recaptcha kullandık.
+Proje de javascriptin react kütüphanesini kullandık. State yönetimini redux toolkit ile yaptık. Proje tasarımında ise tailwindcss kullandık Porje responsive yapıda tasarlandı. Projemdeki verileri contentfulApi üzerinde tutuk bu verileri bu api üzerinden çektik. Emailjs kütüphanesini kullanarak bir mail gönderme formu oluşturduk. Bu formun güvenliği içinde recaptcha kullandık.
 
 ## Proje Özellikleri
+
+#### Tanıtım
+
+![img-1](src/images/1.jpg)
+
+Proje de ilk başta kedimi tantan kısa bir yazı bulunmakta. Tanıtımın altında 3 tane ikon bulunmakta bu ikonlar;
+
+**Github İkonu:** Github ikonuna tıkladığında benim github profilime yönlendirileceksiniz;
+
+**LinkedIn İkonu:** Linkedın ikonuna tıkladığında benim linkedIn profilime yönlendirileceksiniz;
+
+**Medium İkonu:** Medium ikonuna tıkladığında benim Medium profilime yönledirileceksiniz.
+
+Ekranın sağ tarafında resmin altında (_Cv Download_) butonuna tıkladığınızda _CV'imi_ görüntüleyecekisiniz.
+
+#### Yetkinlikler
+
+![img-2](src/images//2.jpg)
+
+Yukaridaki resimde ise bildiğim teknolojiler ve programa dilleri yer almakta.
+
+## Sayfalar
+
+Github projlerimin ve medium yazılarımın olduğu iki farklı sayfa oluşturduk. Ekranın sağ tarafında Projects'ler ve Articles adında iki farklı link bulunmakta projects linkine tıklandğında github projelerimin olduğu sayfaya yönlendirileceksiniz. Articles linkine tıklandığında ise medium yazılarıma yönledirileceksiniz
+
+| ![img-3](src/images/3.jpg) | ![img-4](src/images/4.jpg) |
+| -------------------------- | -------------------------- |
