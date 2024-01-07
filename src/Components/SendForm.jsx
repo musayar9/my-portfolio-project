@@ -99,7 +99,7 @@ const SendForm = () => {
 
                           <textarea
                               className="flex py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-400  appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                              type="textarea" name="message" id="message" value={mail.message} rows={4}
+                              type="textarea" name="message" id="message" value={mail.message} rows={3}
                               onChange={handleChange} required/>
                     <label
                         htmlFor="message"
@@ -112,6 +112,7 @@ const SendForm = () => {
                     <button disabled={!isNotRobot} type="submit" className="text-sm disabled:bg-red-400 px-3 py-1 bg-gray-500 text-gray-50 rounded-md hover:bg-gray-600 duration-200 ease-out active:translate-y-2 shadow-lg" value="Send">Send Mail</button>
                 </div>
                 <ReCAPTCHA
+                className="m-5 flex items-center justify-center"
                     sitekey={ReCAPTCHA_KEY}
                     onChange={onChange}
                 />

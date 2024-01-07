@@ -13,7 +13,7 @@ const ArticleWritingList = ({ item }) => {
               className="w-full h-56  rounded-t-lg group-hover:opacity-10"
               src={item.img}
             />
-            <p className="absolute top-0 opacity-0  font-semibold  translate-y-0 group-hover:translate-y-5 transition duration-500 ease-in   group-hover:opacity-100  text-wrap text-[14px] overflow-auto p-3">
+            <p className="absolute top-0 opacity-0  font-semibold  translate-y-0 group-hover:translate-y-5 transition duration-500 ease-in   group-hover:opacity-100  text-wrap text-[12px] md:text-[14px] overflow-auto p-3">
               {item.description}
             </p>
           </div>
@@ -22,20 +22,7 @@ const ArticleWritingList = ({ item }) => {
             {item.title}
           </h4>
           <div className="flex  p-3 pl-4 ">
-            {/* <a
-              href={item.url}
-              target="_blank"
-              rel="noreferrer"
-              className="text-[#475569] hover:text-[#1e293b] ease-in-out duration-200 hover:scale-125 flex items-center justify-center space-x-2"
-            >
-              <FaMedium size={24} title={item.url} />
-              <AiOutlineMediumWorkmark size={40} title={item.url} />
-            </a> */}
-
-            <p
-      
-              className="text-[#475569] hover:text-[#1e293b] ease-in-out duration-200 hover:scale-125 flex items-center justify-center space-x-2"
-            >
+            <p className="text-[#475569] hover:text-[#1e293b] ease-in-out duration-200 hover:scale-125 flex items-center justify-center space-x-2">
               <FaMedium size={24} title={item.url} />
               <AiOutlineMediumWorkmark size={40} title={item.url} />
             </p>

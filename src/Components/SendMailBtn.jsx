@@ -3,7 +3,7 @@ import { sendFormMail } from "../redux/portfolioSlice.jsx";
 import { MdOutgoingMail } from "react-icons/md";
 import { memo } from "react";
 
-const Form = () => {
+const SendMailBtn = () => {
   const dispatch = useDispatch();
   return (
     <button
@@ -18,4 +18,4 @@ const Form = () => {
   );
 };
 
-export default memo(Form);
+export default memo(SendMailBtn);

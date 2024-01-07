@@ -1,7 +1,6 @@
 import React from "react";
 import Person from "./Person";
 import Item from "./Item";
-import Form from "./Form";
 import { ToastContainer } from "react-toastify";
 import { useSelector } from "react-redux";
 import Loading from "./Loading";
@@ -11,6 +10,7 @@ import ArticleWriting from "./ArticleWriting";
 import PageNotFound from "./PageNotFound";
 import Header from "./Header";
 import Talents from "./Talents";
+import SendMailBtn from "./SendMailBtn";
 
 const Content = () => {
   const { dataStatus, articleStatus } = useSelector((state) => state.portfolio);
@@ -32,7 +32,7 @@ const Content = () => {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
 
-      <Form />
+      <SendMailBtn />
 
       <ToastContainer autoClose={2000} />
     </div>

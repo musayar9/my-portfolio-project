@@ -18,9 +18,9 @@
 ![react-google-recaptcha](https://img.shields.io/badge/react--google--recaptcha-3.1.0-cyan)
 ![emailjs-browser](https://img.shields.io/badge/emailjs--broweser-3.11.0-yellow)
 
-Bu projemde kendimi tanıtan bir portfolyo sayfası yaptım. Bu sayfada benim github ve medium hesabımda yayınlamış olduğum projelerimin ve makaleleimin ön tantımları yer almakta.
+Bu projemde kendimi tanıtan bir portfolyo sayfası yaptık. Bu sayfada benim github ve medium hesabımda yayınlamış olduğum projelerimin ve makaleleimin ön tanıtımları yer almaktadır.
 
-Proje de javascriptin react kütüphanesini kullandık. State yönetimini redux toolkit ile yaptık. Proje tasarımında ise tailwindcss kullandık Porje responsive yapıda tasarlandı. Projemdeki verileri contentfulApi üzerinde tutuk bu verileri bu api üzerinden çektik. Emailjs kütüphanesini kullanarak bir mail gönderme formu oluşturduk. Bu formun güvenliği içinde recaptcha kullandık.
+Proje   react ve redux toolkit  kullanılarak yapıldı. Proje tasarımında ise tailwindcss kullanıldı. Proje responsive yapıda tasarlandı. Projedeki veriler için contentful platformu kullanıldı veriler bu platform üzerinden çekildi. Emailjs kütüphanesini kullanarak bir mail gönderme formu oluşturuldu. Bu formun güvenliği içinde recaptcha kullandıldı.
 
 ## Proje Özellikleri
 
@@ -28,15 +28,15 @@ Proje de javascriptin react kütüphanesini kullandık. State yönetimini redux 
 
 ![img-1](src/images/1.jpg)
 
-Proje de ilk başta kedimi tantan kısa bir yazı bulunmakta. Tanıtımın altında 3 tane ikon bulunmakta bu ikonlar;
+Proje de ilk başta  bir kendimi tanıtan bir önyazı bulunmkata. Önyazı altında 3 tane ikon bulunmakta bu ikonlar;
 
-**Github İkonu:** Github ikonuna tıkladığında benim github profilime yönlendirileceksiniz;
+**Github:** Github ikonuna tıkladığında benim github profilime yönlendirileceksiniz;
 
-**LinkedIn İkonu:** Linkedın ikonuna tıkladığında benim linkedIn profilime yönlendirileceksiniz;
+**LinkedIn:** Linkedın ikonuna tıkladığında benim linkedIn profilime yönlendirileceksiniz;
 
-**Medium İkonu:** Medium ikonuna tıkladığında benim Medium profilime yönledirileceksiniz.
+**Medium:** Medium ikonuna tıkladığında benim Medium profilime yönledirileceksiniz.
 
-Ekranın sağ tarafında resmin altında (_Cv Download_) butonuna tıkladığınızda _CV'imi_ görüntüleyecekisiniz.
+Ekranın sağ tarafında resmin altında (_Cv Download_) butonuna tıkladığınızda  is _CV'imi_ görüntüleyecekisiniz.
 
 #### Yetkinlikler
 
@@ -46,7 +46,7 @@ Yukaridaki resimde ise bildiğim teknolojiler ve programa dilleri yer almakta.
 
 ## Sayfalar
 
-Github projlerimin ve medium yazılarımın olduğu iki farklı sayfa oluşturduk. Ekranın sağ tarafında Projects'ler ve Articles adında iki farklı link bulunmakta projects linkine tıklandğında github projelerimin olduğu sayfaya yönlendirileceksiniz. Articles linkine tıklandığında ise medium yazılarıma yönledirileceksiniz
+Github projlerimin ve medium yazılarımın olduğu iki farklı sayfa oluşturduk. Ekranın sağ tarafında Projects'ler ve Articles adında iki farklı link bulunmakta projects linkine tıklandığınızda github projelerimin olduğu sayfaya yönlendirileceksiniz. Articles linkine tıklandığınız da ise medium yazılarıma yönledirileceksiniz
 
 | ![img-3](src/images/3.jpg) | ![img-4](src/images/4.jpg) |
 | -------------------------- | -------------------------- |
@@ -70,18 +70,18 @@ Yukarıda sol tarafataki resimde resimde mavi okla gösterilen ekran ikonuna tı
 | ![img-10](src/images/10.jpg) | ![img-11](src/images/11.jpg) |
 | ---------------------------- | ---------------------------- |
 
-Yukarıda sol tarafataki resimde yeşil okla gösterilen play ikonuna tıkladığınızda projenin canlı demosunun videosunu izleyebileiceksiniz.
+Yukarıda sol tarafataki resimde yeşil okla gösterilen play ikonuna tıkladığınızda projenin canlı demosunun videosunu izleyebileceksiniz.
 
 ## Articles (Makaleler)
 
 ![img-4](src/images/4.jpg)
 
-Bu sayfada ise medium platformu üzerinde yayınlamış olduğumuz makaleler bulunmaktadır.
+Bu sayfada ise medium platformu üzerinde yayınlamış olduğum makaleler bulunmaktadır.
 
 | ![img-12](src/images/12.jpg) | ![img-13](src/images/13.jpg) |
 | ---------------------------- | ---------------------------- |
 
-Sayfada bulunan makalelerden herhangi birinin üzerine fare ile geldiğinizde ilgili makalenin kısa tanıtımını görüntüleyeceksiniz. Makalenin üstünde tıkladığınız da ise ilgili makalenin bulunduğu medium sayfasına yönlendirileceksiniz.
+Sayfada bulunan makalelerden herhangi birinin üzerine fare ile geldiğinizde ilgili makalenin kısa tanıtımını görüntüleyeceksiniz. Makalenin üstün tıkladığınız da ise ilgili makalenin bulunduğu medium sayfasına yönlendirileceksiniz.
 
 ## Email Gönderimi
 
@@ -92,6 +92,6 @@ Yukarıda sol tarafaki resimde mavi okla gösterilen mesaj ikonuna tıkladığı
 
 ![img-16](src/images/16.jpg)
 
-Açılan form sayfası üzerinden ilgili alanları doldurduktan sonra maili gönderebilmek için recapctha üzerinden size yöneltilen soruya cevap verdikten sonra mail gönder (sendMail) butonu aktif olacak. Butona tıkladıktan sonra size mailinizin gönderildiğinie dair bir bildirim yazısı gösterilecek.
+Açılan form alanında istenillen input  alanlarını doldurduktan sonra emaili gönderebilmek için recapctha üzerinden size yöneltilen soruya cevap verdikten sonra mail gönder (sendMail) butonu aktif olacak. Butona tıkladıktan sonra size mailinizin gönderildiğine dair bir bildirim yazısı gösterilecek.
 
 ![img-17](src/images/17.jpg)
