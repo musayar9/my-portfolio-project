@@ -13,7 +13,7 @@ const ArticleWritingList = ({ item }) => {
               className="w-full h-56  rounded-t-lg group-hover:opacity-10"
               src={item.img}
             />
-            <p className="absolute top-0 opacity-0  font-semibold  translate-y-0 group-hover:translate-y-5 transition duration-500 ease-in   group-hover:opacity-100  text-wrap text-[12px] md:text-[14px] overflow-auto p-3">
+            <p className="absolute top-0 opacity-0  font-semibold  translate-y-0 group-hover:translate-y-5 transition duration-500 ease-in   group-hover:opacity-100  text-wrap text-[11px] md:text-[14px] overflow-auto p-3">
               {item.description}
             </p>
           </div>
