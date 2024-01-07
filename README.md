@@ -18,7 +18,7 @@
 ![react-google-recaptcha](https://img.shields.io/badge/react--google--recaptcha-3.1.0-cyan)
 ![emailjs-browser](https://img.shields.io/badge/emailjs--broweser-3.11.0-yellow)
 
-Bu projemde kendimi tanıtan bir portfolyo sayfası yaptık. Bu sayfada benim github ve medium hesabımda yayınlamış olduğum projelerimin ve makaleleimin ön tanıtımları yer almaktadır.
+Bu projede kendimi tanıtan bir portfolyo sayfası yaptık. Bu sayfada benim github ve medium hesabımda yayınlamış olduğum projelerimin ve makalelerimin ön tanıtımları yer almaktadır.
 
 Proje   react ve redux toolkit  kullanılarak yapıldı. Proje tasarımında ise tailwindcss kullanıldı. Proje responsive yapıda tasarlandı. Projedeki veriler için contentful platformu kullanıldı veriler bu platform üzerinden çekildi. Emailjs kütüphanesini kullanarak bir mail gönderme formu oluşturuldu. Bu formun güvenliği içinde recaptcha kullandıldı.
 
