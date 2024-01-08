@@ -1,9 +1,9 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {MdClose} from "react-icons/md";
 import {sendFormMail} from "../redux/portfolioSlice.jsx"
 import SendForm from "./SendForm.jsx"
-// import Form from "./Form.jsx"
+
 const FormModal = ()=>{
     
    

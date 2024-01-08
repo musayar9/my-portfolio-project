@@ -1,28 +1,25 @@
 import { useDispatch, useSelector } from "react-redux";
-
 import personImg from "../assets/musaSayar.jpg";
 import { IoMdMail } from "react-icons/io";
-import { FaPhone } from "react-icons/fa6";
 import { BsGithub } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa";
 import { BsMedium } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
 import Cv from "/MusaSayarCv.pdf";
 import { FaArrowDown } from "react-icons/fa";
 
 import FormModal from "./FormModal.jsx";
-
+import { sendFormMail } from "../redux/portfolioSlice.jsx";
 
 const Person = () => {
-  const emailAddress = "musasayar67@gmail.com"; // E-posta adresini buraya girin
-  const subject = "İş İlanı"; // E-posta konusunu buraya girin
-  const body = "İşe Alındınız"; // E-posta içeriğini buraya girin
+
 
   const { sendFormModal } = useSelector((state) => state.portfolio);
+  const dispatch = useDispatch()
 
-  const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
-    subject
-  )}&body=${encodeURIComponent(body)}`;
+
+
+  
+  
   return (
     <div className="relative">
       <div className="flex items-center justify-center   p-[2rem] bg-[#e2e8f0] ">
@@ -67,12 +64,15 @@ const Person = () => {
                 />
               </a>
             </div>
-            <a href={mailtoLink} target="_blank" rel="noopener noreferrer">
-              <p className="flex items-center text-[#334155] text-md sm:text-lg md:text-xl font-bold mt-2">
+            <button
+              className="group"
+              onClick={() => dispatch(sendFormMail(true))}
+            >
+              <p  className="flex items-center text-[#334155] text-md sm:text-lg md:text-xl font-bold mt-2  group-hover:text-gray-800 group-hover:scale-110 transition duration-200 ease-in" title="Send Mail">
                 <IoMdMail className="mr-2" size={24} />
                 <span>musasayar67@gmail.com</span>
               </p>
-            </a>
+            </button>
           </div>
 
           <div className="flex flex-col items-center justify-center ">

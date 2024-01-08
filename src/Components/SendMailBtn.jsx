@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { sendFormMail } from "../redux/portfolioSlice.jsx";
 import { MdOutgoingMail } from "react-icons/md";
 import { memo } from "react";

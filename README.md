@@ -20,7 +20,7 @@
 
 Bu projede kendimi tanıtan bir portfolyo sayfası yaptık. Bu sayfada benim github ve medium hesabımda yayınlamış olduğum projelerimin ve makalelerimin ön tanıtımları yer almaktadır.
 
-Proje   react ve redux toolkit  kullanılarak yapıldı. Proje tasarımında ise tailwindcss kullanıldı. Proje responsive yapıda tasarlandı. Projedeki veriler için contentful platformu kullanıldı veriler bu platform üzerinden çekildi. Emailjs kütüphanesini kullanarak bir mail gönderme formu oluşturuldu. Bu formun güvenliği içinde recaptcha kullandıldı.
+Proje react ve redux toolkit kullanılarak yapıldı. Proje tasarımında ise tailwindcss kullanıldı. Proje responsive yapıda tasarlandı. Projedeki veriler için contentful platformu kullanıldı veriler bu platform üzerinden çekildi. İletişim için bir mail gönderme formu oluşturuldu. Bu formun güvenliği içinde recaptcha kullandıldı.
 
 ## Proje Özellikleri
 
@@ -28,7 +28,7 @@ Proje   react ve redux toolkit  kullanılarak yapıldı. Proje tasarımında ise
 
 ![img-1](src/images/1.jpg)
 
-Proje de ilk başta  bir kendimi tanıtan bir önyazı bulunmkata. Önyazı altında 3 tane ikon bulunmakta bu ikonlar;
+Proje de ilk başta bir kendimi tanıtan bir önyazı bulunmkata. Önyazı altında 3 tane ikon bulunmakta bu ikonlar;
 
 **Github:** Github ikonuna tıkladığında benim github profilime yönlendirileceksiniz;
 
@@ -36,7 +36,7 @@ Proje de ilk başta  bir kendimi tanıtan bir önyazı bulunmkata. Önyazı alt�
 
 **Medium:** Medium ikonuna tıkladığında benim Medium profilime yönledirileceksiniz.
 
-Ekranın sağ tarafında resmin altında (_Cv Download_) butonuna tıkladığınızda  is _CV'imi_ görüntüleyecekisiniz.
+Ekranın sağ tarafında resmin altında (_Cv Download_) butonuna tıkladığınızda is _CV'imi_ görüntüleyecekisiniz.
 
 #### Yetkinlikler
 
@@ -85,13 +85,13 @@ Sayfada bulunan makalelerden herhangi birinin üzerine fare ile geldiğinizde il
 
 ## Email Gönderimi
 
-| ![img-14](src/images/14.jpg) | ![img-15](src/images/15.jpg) |
-| ---------------------------- | ---------------------------- |
+| ![img-20](src/images/20.jpg) | ![img-14](src/images/14.jpg) | ![img-18](src/images/18.jpg) |
+| ---------------------------- | ---------------------------- | ---------------------------- |
 
-Yukarıda sol tarafaki resimde mavi okla gösterilen mesaj ikonuna tıkladığınızda ekranda bir modal sayfası içinde bir form alanı açılacak.
+Yukarıda sol tarafaki resimlerde mavi ve yeşil okla gösterilen mesaj ikonuna veya email-adresine tıkladığınızda ekranda modal içinde form alanı açılacak.
 
-![img-16](src/images/16.jpg)
+![img-19](src/images/19.jpg)
 
-Açılan form alanında istenillen input  alanlarını doldurduktan sonra emaili gönderebilmek için recapctha üzerinden size yöneltilen soruya cevap verdikten sonra mail gönder (sendMail) butonu aktif olacak. Butona tıkladıktan sonra size mailinizin gönderildiğine dair bir bildirim yazısı gösterilecek.
+Açılan form alanında istenillen input alanlarını doldurduktan sonra emaili gönderebilmek için recapctha üzerinden size yöneltilen soruya cevap verdikten sonra mail gönder (sendMail) butonu aktif olacak. Butona tıkladıktan sonra size mailinizin gönderildiğine dair bir bildirim yazısı gösterilecek.
 
 ![img-17](src/images/17.jpg)
