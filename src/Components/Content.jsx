@@ -22,7 +22,6 @@ const Content = () => {
   return (
     <div className="relative ">
       <Person />
-      
       <Talents/>
       <Header />
       <Routes>

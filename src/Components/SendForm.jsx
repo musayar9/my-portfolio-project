@@ -5,7 +5,7 @@ import { sendFormMail } from "../redux/portfolioSlice.jsx";
 import { toast } from "react-toastify";
 import ReCAPTCHA from "react-google-recaptcha";
 const ReCAPTCHA_KEY = import.meta.env.VITE_CAPTCHA_API_KEY;
-const EMAIL_KEY = import.meta.env.VITE_EMAIL_API_KEY;
+
 const SendForm = () => {
   const form = useRef();
   const [mail, sendMail] = useState({
