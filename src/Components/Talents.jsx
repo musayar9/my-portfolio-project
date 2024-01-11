@@ -20,7 +20,7 @@ const Talents = () => {
       gradientColor="#e2e8f0"
       gradientWidth={250}
     >
-      <div className="flex items-center space-x-2 justify-center px-6 my-3  text-[#334155]  border-r-2 border-[#eee]">
+      <div className="flex items-center space-x-2 justify-center px-6  my-3  text-[#334155]  border-r-2 border-[#eee]">
         {" "}
         <FaHtml5 className="text-[#E54C21]" /> <span>HTML5</span>
       </div>

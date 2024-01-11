@@ -23,7 +23,7 @@ const Person = () => {
   return (
     <div className="relative">
       <div className="flex items-center justify-center   p-[2rem] bg-[#e2e8f0] ">
-        <div className=" md:grid  grid-cols-4  gap-4   w-[90vw] w-max-[1120px]">
+        <div className=" md:grid  grid-cols-4  gap-4   max-w-7xl">
           <div className="col-span-3 flex items-center justify-center flex-col  p-4 text-center">
             {/*<h1 className="text-[#1e293b] font-bold text-4xl">Junior Front-End Developer</h1>*/}
             <h2 className="text-[#334155] font-bold text-3xl">Musa Sayar</h2>
@@ -68,7 +68,10 @@ const Person = () => {
               className="group"
               onClick={() => dispatch(sendFormMail(true))}
             >
-              <p  className="flex items-center text-[#334155] text-md sm:text-lg md:text-xl font-bold mt-2  group-hover:text-gray-800 group-hover:scale-110 transition duration-200 ease-in" title="Send Mail">
+              <p
+                className="flex items-center text-[#334155] text-md sm:text-lg md:text-xl font-bold mt-2  group-hover:text-gray-800 group-hover:scale-110 transition duration-200 ease-in"
+                title="Send Mail"
+              >
                 <IoMdMail className="mr-2" size={24} />
                 <span>musasayar67@gmail.com</span>
               </p>
