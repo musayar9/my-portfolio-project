@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import {useState, useRef} from 'react'
 import {FaGithub} from "react-icons/fa";
 import {BsDisplay} from "react-icons/bs";
 import {MdClose} from "react-icons/md";
