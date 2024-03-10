@@ -1,7 +1,7 @@
-import React from "react";
+
 import { FaMedium } from "react-icons/fa6";
 import { AiOutlineMediumWorkmark } from "react-icons/ai";
-import { Link } from "react-router-dom";
+
 
 const ArticleWritingList = ({ item }) => {
   return (
