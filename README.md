@@ -1,3 +1,10 @@
+
+
+
+https://github.com/musayar9/my-portfolio-project/assets/96313325/f91b71b4-4644-4745-aa3a-97eafd788a88
+
+
+
 ## Portfolyo Sayfam - [Projeyi Görüntüle](https://my-portfolio-project-two-sigma.vercel.app/)
 
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
