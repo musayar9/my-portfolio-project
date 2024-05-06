@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import emailjs from "@emailjs/browser";
+import  { useState, useRef } from "react";
+import { useDispatch } from "react-redux";
+
 import { sendFormMail } from "../redux/portfolioSlice.jsx";
 import { toast } from "react-toastify";
 import ReCAPTCHA from "react-google-recaptcha";
