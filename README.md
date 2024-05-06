@@ -1,4 +1,11 @@
-## Portfolyo Sayfam - [Projeyi Görüntüle](https://musasayar-portfolio.netlify.app/)
+
+
+
+https://github.com/musayar9/my-portfolio-project/assets/96313325/f91b71b4-4644-4745-aa3a-97eafd788a88
+
+
+
+## Portfolyo Sayfam - [Projeyi Görüntüle](https://my-portfolio-project-two-sigma.vercel.app/)
 
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![React-DOM](https://img.shields.io/badge/React--DOM-18.2.0-red)
@@ -18,7 +25,7 @@
 ![react-google-recaptcha](https://img.shields.io/badge/react--google--recaptcha-3.1.0-cyan)
 ![emailjs-browser](https://img.shields.io/badge/emailjs--broweser-3.11.0-yellow)
 
-Bu projede kendimi tanıtan bir portfolyo sayfası yaptık. Bu sayfada benim github ve medium hesabımda yayınlamış olduğum projelerimin ve makalelerimin ön tanıtımları yer almaktadır.
+Bu projede kendimi tanıtan bir portfolyo sayfası yaptıldı. Bu sayfada benim github ve medium hesabımda yayınlamış olduğum projelerimin ve makalelerimin ön tanıtımları yer almaktadır.
 
 Proje react ve redux toolkit kullanılarak yapıldı. Proje tasarımında ise tailwindcss kullanıldı. Proje responsive yapıda tasarlandı. Projedeki veriler için contentful platformu kullanıldı veriler bu platform üzerinden çekildi. İletişim için bir mail gönderme formu oluşturuldu. Bu formun güvenliği içinde recaptcha kullandıldı.
 
